@@ -1,0 +1,40 @@
+
+package calendar;
+
+public class Calendar 
+{
+
+    public static void main(String[] args)
+    {
+     int day[] = new int [31];
+     System.out.println("------December------");
+     System.out.print("S  M  T  W  T  F  S ");
+     
+       System.out.println();
+     for(int i = 0; i < 31; i++)
+     {
+         day[i] = i + 1;
+         if(i == 7 || i == 14 || i==21||i==28)
+         {
+             System.out.println();
+         }
+            if (day[i]<10)
+              {
+                   System.out.print(day[i]+"  "); 
+              }
+            else
+            {
+                  System.out.print(day[i]+" "); 
+            }
+         
+     }
+      System.out.println();
+    
+     System.out.println("-------------");
+             
+    
+    
+     }
+             
+}
+    
